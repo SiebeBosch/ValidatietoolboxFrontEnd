@@ -1,0 +1,12 @@
+#validatiepaneel {
+    background-color: white;
+    height:100%;
+    width:100%;
+    transition: all 0.2s ease-in-out;
+}
+
+#validatiepaneel.hidden {
+    background-color: rgba(0,0,0,0.12);
+    height:100%;
+    width:100%;
+}

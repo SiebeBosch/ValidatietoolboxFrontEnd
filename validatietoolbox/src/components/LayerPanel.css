@@ -1,0 +1,184 @@
+
+#layerpanel {
+    z-index: 888;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    transform: translateX(0px);
+    will-change: transform;
+    /* width:360px; */
+    bottom: 0px;
+    top: 0px;
+    /* padding: 10px 10px 10px 10px; */
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    
+    /* box-shadow: 3px 3px 10px rgb(150, 150, 150); */
+    /* border-radius: 0px 10px 10px 0px; */
+  }
+  
+  #layerpanel.closed {
+    transform: translateX(-320px);
+  }
+  
+  #togglebutton {
+    z-index: 888;
+    background-color: var(--accent-color);
+    will-change: transform;
+    transform: scale(0,0);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: white;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  #closebutton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color:var(--accent-color);  
+    width:50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+  
+  #togglebutton.closed {
+    transform: scale(1,1);
+  }
+  
+  #closecontextbutton {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color:var(--accent-color);  
+    width:50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+  
+  
+#buttonopenclose {
+    z-index: 99;
+    background-color: white;
+    border-left: 0px;
+    border-radius: 0px 5px 0px 0px;
+    color: grey;
+    transition: .3s;
+    box-shadow: initial;
+  }
+
+  #buttonopenclose:hover {
+    color: #c0392b;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  
+
+
+  .buttonfeaturetype {
+    z-index: 88;
+    background-color: white !important;
+    border-left: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 0px 0px 0px 0px !important;
+    /* color: grey !important; */
+    /* transition: .3s !important; */
+    /* box-shadow: initial !important; */
+  }
+  
+  .buttonfeaturetype:hover {
+    z-index: 99;
+    color: #c0392b;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+
+
+  #polygonmarkerbutton {
+    z-index: 88;
+    border-radius: 0px 0px 5px 0px;
+    background-color: white !important;
+    border-left: 0px solid rgba(0, 0, 0, 0.12) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  #polygonmarkerbutton:hover {
+    z-index: 99;
+    color: #c0392b;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);  
+  }
+  
+
+  #layerpanel-toggle {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: block;
+    height: 2.2rem;
+    right: -40px;
+    top: 30px;
+    position: absolute;
+    text-decoration: none;
+    top: 7px;
+    width: 2.2rem;
+  }
+  #layerpanel-toggle::after {
+    content: "🡐";
+    color: white;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: -.2rem 0 0 0;
+    text-align: center;
+  }
+  .no-layerpanel #layerpanel-toggle::after {
+    content: "🡒";
+    margin-left: .2rem;
+  }
+  
+  #layerpanel-toggle:hover {
+    /* background-color: goldenrod; */
+  }
+
+  
+#panelcontent {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    width:300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+#buttons {
+    background-color: transparent;
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+#buttons button {
+    background-color: white;
+}
+
+  .Mui-selected {
+    color: #c0392b !important;
+  }

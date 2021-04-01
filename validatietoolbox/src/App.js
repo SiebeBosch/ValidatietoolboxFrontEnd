@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import {Component} from 'react';
-import Login from './components/Login';
-import Logout from './components/Logout';
+import LayerPanel from './components/LayerPanel';
+import MainPanel from './components/MainPanel';
+
+require ('./App.css');
 
 class App extends Component {
   state = {  }
@@ -24,21 +26,21 @@ class App extends Component {
   }
 
   
-  logout() {
-    window.firebase.auth().signOut().then(() => {
-        console.log("user successfully logged out.")
-        // Sign-out successful.
-      }).catch((error) => {
-        console.log("an error occurred when loggin out")
-        // An error happened.
-      });
-  }
-
   render() { 
-    let content=<div>Welkom <Logout></Logout></div>
-    if (!this.state.user) {
-      content=<Login></Login>
-    }
+    let content=
+      <div id="mainContent">
+        <LayerPanel/>
+        <MainPanel/>
+      </div>      
+    
+    
+    // <div>Welkom <Logout></Logout></div>
+    
+
+
+    // if (!this.state.user) {
+    //   content=<Login></Login>
+    // }
     return (
       <div className="App">
         {content}

@@ -1,0 +1,19 @@
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    min-width:200px;
+  }
+  
+  .page {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
